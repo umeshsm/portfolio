@@ -1,16 +1,17 @@
 ---
-// import { getCollection } from 'astro:content'
-import PageLayout from '@layouts/PageLayout.astro'
-// import ArrowCard from "@components/ArrowCard"
-import StackCard from '@components/StackCard.astro'
-import { SITE, SOCIALS, TECH_STACK } from '@consts'
-import TwinklingStars from '@components/TwinklingStars.astro'
-import MeteorShower from '@components/MeteorShower.astro'
+import { getCollection } from 'astro:content'
 
-// const posts = (await getCollection('blog'))
-//   .filter((post) => !post.data.draft)
-//   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-//   .slice(0, 3)
+import ArrowCard from '@components/ArrowCard'
+import MeteorShower from '@components/MeteorShower.astro'
+import StackCard from '@components/StackCard.astro'
+import TwinklingStars from '@components/TwinklingStars.astro'
+import { SITE, SOCIALS, TECH_STACK } from '@consts'
+import PageLayout from '@layouts/PageLayout.astro'
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3)
 
 // const projects = (await getCollection('projects'))
 //   .filter((project) => !project.data.draft)
@@ -113,27 +114,30 @@ import MeteorShower from '@components/MeteorShower.astro'
       </section>
 
       <!-- Blog Preview Section -->
-      <!-- <section class="animate">
-        <div class="space-y-4">
-          <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
-              Recent posts
-            </p>
-            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+      <section class='animate'>
+        <div class='space-y-4'>
+          <div class='flex justify-between'>
+            <p class='font-semibold text-black dark:text-white'>Recent posts</p>
+            <a
+              href='/blog'
+              class='w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend'
+            >
+              <span class='text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend'>
                 All posts
               </span>
             </a>
           </div>
-          <ul class="space-y-4">
-            {posts.map((post) => (
-              <li>
-                <ArrowCard entry={post} />
-              </li>
-            ))}
+          <ul class='space-y-4'>
+            {
+              posts.map((post) => (
+                <li>
+                  <ArrowCard entry={post} />
+                </li>
+              ))
+            }
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Tech Stack Section -->
       <section class='animate'>
