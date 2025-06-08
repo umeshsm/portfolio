@@ -1,10 +1,12 @@
 ---
 company: 'Two Point One'
-role: 'Software Developer'
+role: 'Senior Software Developer'
 dateStart: '10/16/2022'
 dateEnd: 'Now'
 ---
 
+- Led the frontend architecture and development of **ScrnNow**, a cutting-edge **DOOH (Digital Out-of-Home) advertising platform** that transforms digital displays into revenue-generating assets. Integrated with top-tier programmatic ad exchanges, the platform enabled real-time bidding and ad delivery, **increasing screen monetization by ~25%** and **reducing ad load latency by 40%**.
+- Engineered **AEX (American Equipment Exchange)**, an **industrial e-commerce platform** built from the ground up with a fast, responsive interface tailored for heavy equipment transactions. Streamlined complex inventory flows and enabled dynamic pricing modules, resulting in an **18% increase in order conversions** and a **2x improvement in product browsing speed**.
 - Led the development of **CloudMedic**, a **healthcare platform** providing
   **advanced diagnostic tools**, improving patient engagement with a
   **seamless and responsive** user interface.
