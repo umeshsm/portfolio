@@ -60,7 +60,13 @@ export const SOCIALS: Socials = [
     HREF: 'mailto:iamumeshsm@gmail.com'
   },
   {
-    NAME: 'Github',
+    NAME: 'Github (Professional)',
+    ICON: 'github',
+    TEXT: 'umesh-pdgt',
+    HREF: 'https://github.com/umesh-pdgt'
+  },
+  {
+    NAME: 'Github (Personal)',
     ICON: 'github',
     TEXT: 'umeshsm',
     HREF: 'https://github.com/umeshsm'
